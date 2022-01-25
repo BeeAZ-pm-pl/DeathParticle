@@ -1,0 +1,20 @@
+---
+# DeathParticle Config
+# Turn particles on or off
+
+
+HeartParticle: true
+InkParticle: false
+LavaParticle: false
+AngryVillagerParticle: false
+EndermanTeleportParticle: false
+CriticalParticle: false
+ExplodeParticle: false
+HappyVillagerParticle: false
+PortalParticle: false
+RedstoneParticle: false
+SnowballPoofParticle: false
+SmokeParticle: false
+WaterDripParticle: false
+active: true
+...
