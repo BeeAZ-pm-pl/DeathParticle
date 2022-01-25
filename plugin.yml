@@ -1,0 +1,10 @@
+name: DeathParticle
+main: lenlenlL6\deathparticle\DeathParticle
+author: lenlenlL6
+api: 4.0.0
+version: 1.0.0
+
+permissions:
+ deathparticle.command.use:
+  description: Permission to use the command DeathParticle
+  default: op
