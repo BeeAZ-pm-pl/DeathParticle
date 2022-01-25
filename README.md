@@ -58,6 +58,6 @@ active: true
 
 ## Install
 - Step 1: Click the "Direct Download" button to download the plugin
-- Step 2: move the file "HitParticle.phar" into the file "plugins"
+- Step 2: move the file "DeathParticle.phar" into the file "plugins"
 - Step 3: Restart server for plugins to work
 
