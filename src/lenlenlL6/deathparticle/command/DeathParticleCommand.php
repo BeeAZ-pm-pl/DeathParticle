@@ -13,11 +13,12 @@ class DeathParticleCommand extends Command implements PluginOwned{
   
   public function __construct(DeathParticle $main){
     $this->main = $main;
-    parent::__construct("deathparticle", "Turn on or off DeathParticle", null, ["deathparticle", "dp"]);
+    parent::__construct("deathparticle", "Turn on or off DeathParticle", null, ["deathparticle"]);
     $this->setPermission("deathparticle.command.use");
   }
   
   public function execute(CommandSender $player, String $label, array $args): bool{
+    if($this->testPermission($player)){
     if(isset($args[0])){
       switch($args[0]){
         case "on":
@@ -35,6 +36,7 @@ class DeathParticleCommand extends Command implements PluginOwned{
     }else{
       $player->sendMessage("§c> Usage: /deathpartice [on | off]");
     }
+}
     return true;
   }
   
