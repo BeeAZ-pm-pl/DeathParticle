@@ -26,29 +26,13 @@ use lenlenlL6\deathparticle\command\DeathParticleCommand;
 class DeathParticle extends PluginBase implements Listener {
   
   public function onEnable() : void{
-    $this->getLogger()->info("
-      ____             _   _       ____            _   _      _      
- |  _ \  ___  __ _| |_| |__   |  _ \ __ _ _ __| |_(_) ___| | ___ 
- | | | |/ _ \/ _` | __| '_ \  | |_) / _` | '__| __| |/ __| |/ _ \
- | |_| |  __/ (_| | |_| | | | |  __/ (_| | |  | |_| | (__| |  __/
- |____/ \___|\__,_|\__|_| |_| |_|   \__,_|_|   \__|_|\___|_|\___|
- ");
- $this->getLogger()->info("Plugin Now Enable");
- $this->getLogger()->info("Author: lenlenlL6\nVersion: 1.0.0\Api: 4.0.0");
  $this->saveDefaultConfig();
  $this->getServer()->getPluginManager()->registerEvents($this, $this);
- $this->getServer()->getCommandMap()->register("Command", new DeathParticleCommand($this));
+ $this->getServer()->getCommandMap()->register("DeathParticle", new DeathParticleCommand($this));
   }
   
   public function onDisable() : void{
-    $this->getLogger()->info("
-      ____             _   _       ____            _   _      _      
- |  _ \  ___  __ _| |_| |__   |  _ \ __ _ _ __| |_(_) ___| | ___ 
- | | | |/ _ \/ _` | __| '_ \  | |_) / _` | '__| __| |/ __| |/ _ \
- | |_| |  __/ (_| | |_| | | | |  __/ (_| | |  | |_| | (__| |  __/
- |____/ \___|\__,_|\__|_| |_| |_|   \__,_|_|   \__|_|\___|_|\___|
- ");
- $this->getLogger()->info("Plugin Now Disable");
+   $this->getConfig()->save();
   }
   
   public function onDeath (EntityDeathEvent $event){
