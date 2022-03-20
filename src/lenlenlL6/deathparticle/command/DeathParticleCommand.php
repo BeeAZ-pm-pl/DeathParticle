@@ -10,6 +10,8 @@ use pocketmine\plugin\PluginOwned;
 use lenlenlL6\deathparticle\DeathParticle;
 
 class DeathParticleCommand extends Command implements PluginOwned{
+
+  public $main;
   
   public function __construct(DeathParticle $main){
     $this->main = $main;
