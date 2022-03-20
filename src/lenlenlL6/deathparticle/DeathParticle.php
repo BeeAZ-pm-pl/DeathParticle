@@ -55,8 +55,8 @@ class DeathParticle extends PluginBase implements Listener {
         $world->addParticle($pos->add(0, 0, 1), new InkParticle(1));
       }
       if($this->getConfig()->get("LavaParticle") === true){
-        $world->addParticle($pos, new LavaParticle($pos));
-        $world->addParticle($pos, new LavaParticle($pos));
+        $world->addParticle($pos, new LavaParticle());
+        $world->addParticle($pos, new LavaParticle());
         $world->addParticle($pos->add(1, 0, 0), new LavaParticle());
         $world->addParticle($pos->add(0, 1, 0), new LavaParticle());
         $world->addParticle($pos->add(0, 0, 1), new LavaParticle());
