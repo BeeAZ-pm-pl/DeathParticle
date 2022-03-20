@@ -41,95 +41,95 @@ class DeathParticle extends PluginBase implements Listener {
     $world = $entity->getWorld();
     if($this->getConfig()->get("active") === true){
       if($this->getConfig()->get("HeartParticle") === true){
-        $world->addParticle($pos, new HeartParticle(1, $pos));
-        $world->addParticle($pos, new HeartParticle(1, $pos));
-        $world->addParticle($pos->add(1, 0, 0), new HeartParticle(1, $pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new HeartParticle(1, $pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new HeartParticle(1, $pos->add(0, 0, 1)));
+        $world->addParticle($pos, new HeartParticle(1));
+        $world->addParticle($pos, new HeartParticle(1));
+        $world->addParticle($pos->add(1, 0, 0), new HeartParticle(1));
+        $world->addParticle($pos->add(0, 1, 0), new HeartParticle(1));
+        $world->addParticle($pos->add(0, 0, 1), new HeartParticle(1));
       }
       if($this->getConfig()->get("InkParticle") === true){
-        $world->addParticle($pos, new InkParticle(1, $pos));
-        $world->addParticle($pos, new InkParticle(1, $pos));
-        $world->addParticle($pos->add(1, 0, 0), new InkParticle(1, $pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new InkParticle(1, $pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new InkParticle(1, $pos->add(0, 0, 1)));
+        $world->addParticle($pos, new InkParticle(1));
+        $world->addParticle($pos, new InkParticle(1));
+        $world->addParticle($pos->add(1, 0, 0), new InkParticle(1));
+        $world->addParticle($pos->add(0, 1, 0), new InkParticle(1));
+        $world->addParticle($pos->add(0, 0, 1), new InkParticle(1));
       }
       if($this->getConfig()->get("LavaParticle") === true){
         $world->addParticle($pos, new LavaParticle($pos));
         $world->addParticle($pos, new LavaParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new LavaParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new LavaParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new LavaParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos->add(1, 0, 0), new LavaParticle());
+        $world->addParticle($pos->add(0, 1, 0), new LavaParticle());
+        $world->addParticle($pos->add(0, 0, 1), new LavaParticle());
       }
       if($this->getConfig()->get("AngryVillagerParticle") === true){
-        $world->addParticle($pos, new AngryVillagerParticle($pos));
-        $world->addParticle($pos, new AngryVillagerParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new AngryVillagerParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new AngryVillagerParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new AngryVillagerParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos, new AngryVillagerParticle());
+        $world->addParticle($pos, new AngryVillagerParticle());
+        $world->addParticle($pos->add(1, 0, 0), new AngryVillagerParticle());
+        $world->addParticle($pos->add(0, 1, 0), new AngryVillagerParticle());
+        $world->addParticle($pos->add(0, 0, 1), new AngryVillagerParticle());
       }
       if($this->getConfig()->get("EndermanTeleportParticle") === true){
-        $world->addParticle($pos, new EndermanTeleportParticle($pos));
-        $world->addParticle($pos, new EndermanTeleportParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new EndermanTeleportParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new EndermanTeleportParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new EndermanTeleportParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos, new EndermanTeleportParticle());
+        $world->addParticle($pos, new EndermanTeleportParticle());
+        $world->addParticle($pos->add(1, 0, 0), new EndermanTeleportParticle());
+        $world->addParticle($pos->add(0, 1, 0), new EndermanTeleportParticle());
+        $world->addParticle($pos->add(0, 0, 1), new EndermanTeleportParticle());
       }
       if($this->getConfig()->get("CriticalParticle") === true){
-        $world->addParticle($pos, new CriticalParticle(1, $pos));
-        $world->addParticle($pos, new CriticalParticle(1, $pos));
-        $world->addParticle($pos->add(1, 0, 0), new CriticalParticle(1, $pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new CriticalParticle(1, $pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new CriticalParticle(1, $pos->add(0, 0, 1)));
+        $world->addParticle($pos, new CriticalParticle(1));
+        $world->addParticle($pos, new CriticalParticle(1));
+        $world->addParticle($pos->add(1, 0, 0), new CriticalParticle(1));
+        $world->addParticle($pos->add(0, 1, 0), new CriticalParticle(1));
+        $world->addParticle($pos->add(0, 0, 1), new CriticalParticle(1));
       }
       if($this->getConfig()->get("ExplodeParticle") === true){
-        $world->addParticle($pos, new ExplodeParticle($pos));
-        $world->addParticle($pos, new ExplodeParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new ExplodeParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new ExplodeParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new ExplodeParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos, new ExplodeParticle());
+        $world->addParticle($pos, new ExplodeParticle());
+        $world->addParticle($pos->add(1, 0, 0), new ExplodeParticle());
+        $world->addParticle($pos->add(0, 1, 0), new ExplodeParticle());
+        $world->addParticle($pos->add(0, 0, 1), new ExplodeParticle());
       }
       if($this->getConfig()->get("HappyVillagerParticle") === true){
-        $world->addParticle($pos, new HappyVillagerParticle($pos));
-        $world->addParticle($pos, new HappyVillagerParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new HappyVillagerParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new HappyVillagerParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new HappyVillagerParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos, new HappyVillagerParticle());
+        $world->addParticle($pos, new HappyVillagerParticle());
+        $world->addParticle($pos->add(1, 0, 0), new HappyVillagerParticle());
+        $world->addParticle($pos->add(0, 1, 0), new HappyVillagerParticle());
+        $world->addParticle($pos->add(0, 0, 1), new HappyVillagerParticle());
       }
       if($this->getConfig()->get("PortalParticle") === true){
-        $world->addParticle($pos, new PortalParticle($pos));
-        $world->addParticle($pos, new PortalParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new PortalParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new PortalParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new PortalParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos, new PortalParticle());
+        $world->addParticle($pos, new PortalParticle());
+        $world->addParticle($pos->add(1, 0, 0), new PortalParticle());
+        $world->addParticle($pos->add(0, 1, 0), new PortalParticle());
+        $world->addParticle($pos->add(0, 0, 1), new PortalParticle());
       }
       if($this->getConfig()->get("RedstoneParticle") === true){
-        $world->addParticle($pos, new RedstoneParticle(3, $pos));
-        $world->addParticle($pos, new RedstoneParticle(3, $pos));
-        $world->addParticle($pos->add(1, 0, 0), new RedstoneParticle(3, $pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new RedstoneParticle(3, $pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new RedstoneParticle(3, $pos->add(0, 0, 1)));
+        $world->addParticle($pos, new RedstoneParticle(3));
+        $world->addParticle($pos, new RedstoneParticle(3));
+        $world->addParticle($pos->add(1, 0, 0), new RedstoneParticle(3));
+        $world->addParticle($pos->add(0, 1, 0), new RedstoneParticle(3));
+        $world->addParticle($pos->add(0, 0, 1), new RedstoneParticle(3));
       }
       if($this->getConfig()->get("SnowballPoofParticle") === true){
-        $world->addParticle($pos, new SnowballPoofParticle($pos));
-        $world->addParticle($pos, new SnowballPoofParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new SnowballPoofParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new SnowballPoofParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new SnowballPoofParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos, new SnowballPoofParticle());
+        $world->addParticle($pos, new SnowballPoofParticle());
+        $world->addParticle($pos->add(1, 0, 0), new SnowballPoofParticle());
+        $world->addParticle($pos->add(0, 1, 0), new SnowballPoofParticle());
+        $world->addParticle($pos->add(0, 0, 1), new SnowballPoofParticle());
       }
       if($this->getConfig()->get("SmokeParticle") === true){
-        $world->addParticle($pos, new SmokeParticle(1, $pos));
-        $world->addParticle($pos, new SmokeParticle(1, $pos));
-        $world->addParticle($pos->add(1, 0, 0), new SmokeParticle(1, $pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new SmokeParticle(1, $pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new SmokeParticle(1, $pos->add(0, 0, 1)));
+        $world->addParticle($pos, new SmokeParticle(1));
+        $world->addParticle($pos, new SmokeParticle(1));
+        $world->addParticle($pos->add(1, 0, 0), new SmokeParticle(1));
+        $world->addParticle($pos->add(0, 1, 0), new SmokeParticle(1));
+        $world->addParticle($pos->add(0, 0, 1), new SmokeParticle(1));
       }
       if($this->getConfig()->get("WaterDripParticle") === true){
-        $world->addParticle($pos, new WaterDripParticle($pos));
-        $world->addParticle($pos, new WaterDripParticle($pos));
-        $world->addParticle($pos->add(1, 0, 0), new WaterDripParticle($pos->add(1, 0, 0)));
-        $world->addParticle($pos->add(0, 1, 0), new WaterDripParticle($pos->add(0, 1, 0)));
-        $world->addParticle($pos->add(0, 0, 1), new WaterDripParticle($pos->add(0, 0, 1)));
+        $world->addParticle($pos, new WaterDripParticle());
+        $world->addParticle($pos, new WaterDripParticle());
+        $world->addParticle($pos->add(1, 0, 0), new WaterDripParticle());
+        $world->addParticle($pos->add(0, 1, 0), new WaterDripParticle());
+        $world->addParticle($pos->add(0, 0, 1), new WaterDripParticle());
       }
     }
   }
