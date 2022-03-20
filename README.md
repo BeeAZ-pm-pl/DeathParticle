@@ -1,5 +1,5 @@
 <div align="center">
-<h1>DeathParticle | v1.0.0<h1>
+<h1>DeathParticle | v1.0.1<h1>
 </div>
 <p align="center">
 <a href="https://poggit.pmmp.io/p/DeathParticle"><img src="https://poggit.pmmp.io/shield.state/DeathParticle">
