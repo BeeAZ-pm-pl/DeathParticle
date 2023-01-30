@@ -1,8 +1,8 @@
 name: DeathParticle
 main: lenlenlL6\deathparticle\DeathParticle
 author: lenlenlL6, BeeAZZ
-api: 4.0.0
-version: 1.0.1
+api: 5.0.0
+version: 2.0.1
 
 permissions:
  deathparticle.command.use:
